@@ -12,8 +12,7 @@ export const App = () => {
 
   console.log("더하기: " + plus);
   console.log("빼기: " + plus);
-  console.log("의도적 충돌 포인트!!");
-  console.log("나누기: " + plus);
+  console.log("conflict!!"); 
   console.log("곱하기: " + plus);
 
   const now = new Date();
