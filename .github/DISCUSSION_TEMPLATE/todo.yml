@@ -1,0 +1,43 @@
+name: "TODO Discussion Template"
+description: 오늘의 작업 정리 템플릿입니다.
+title: "[TODO] 홍길동 250425"
+labels: ["General Introduction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✅ 오늘의 할 일
+        아래 항목을 정리하고 팀에 공유하세요.
+
+  - type: textarea
+    id: personal-todo
+    attributes:
+      label: 📌 TODO 리스트
+      description: 오늘 목표한 작업들을 체크리스트 형식으로 작성하세요.
+      value: |
+        ### 📚 Kubernetes
+        - [ ] CKA 정리
+        - [ ] 실습 따라 하기
+
+        ### 📚 알고리즘
+        - [ ] 문제 2개 풀기
+      render: bash
+    validations:
+      required: true
+
+  - type: textarea
+    id: memo
+    attributes:
+      label: 📝 Memo
+      description: 오늘 떠오른 생각이나 메모를 적어주세요.
+      value: |
+        - 
+        - 
+
+  - type: textarea
+    id: share
+    attributes:
+      label: 💡 공유
+      description: 팀에 공유하고 싶은 정보나 코드, 링크 등을 적어주세요.
+      value: |
+        - 
