@@ -1,0 +1,39 @@
+title: "[Suggestion] "
+labels: ["Suggestion"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 의견 제시
+        프로젝트에 대한 새로운 아이디어나 개선점을 자유롭게 제안해주세요.
+
+  - type: input
+    id: summary
+    attributes:
+      label: 제안 요약
+      description: 제안 내용을 요약해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 상세 내용
+      description: 제안의 구체적인 내용을 작성해주세요.
+      value: |
+        - 
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 관련 분야
+      options:
+        - 기능 개선
+        - 문서화
+        - 개발 환경
+        - 기타
+    validations:
+      required: true
