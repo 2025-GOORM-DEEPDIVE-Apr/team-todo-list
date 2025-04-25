@@ -1,0 +1,49 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # ✅ 팀 TODO 공유 양식
+        각자의 이슈를 공유하고, 회의 메모나 공지사항을 정리하는 공간입니다.
+
+  - type: textarea
+    id: members-issues
+    attributes:
+      label: 👥 멤버별 TODO 이슈 링크
+      description: 각 팀원의 TODO 이슈 링크를 아래 형식에 맞게 작성해주세요.
+      value: |
+        - 김민아: #28
+        - 김태훈: #2
+        - 박근석: #3
+        - 성종민: #4
+        - 이현재: #5
+        - 한상희: #6
+    validations:
+      required: true
+
+  - type: textarea
+    id: team-memo
+    attributes:
+      label: 📝 팀 회의 메모 또는 공지사항
+      description: 오늘 회의 중 공유된 중요한 내용, 결정 사항, 논의 결과 등을 작성해주세요.
+      value: |
+        - 회의 주제:
+        - 결정된 사항:
+        - 다음 할 일:
+
+  - type: textarea
+    id: shared-links
+    attributes:
+      label: 🔗 참고 자료 및 공유 링크
+      description: 팀과 공유할 자료, 문서, 도구 링크 등을 정리해주세요.
+      value: |
+        - [공식 문서](https://...)
+        - [회의록 Google Doc](https://...)
+        - [디자인 시안](https://...)
+
+  - type: textarea
+    id: extra-notes
+    attributes:
+      label: 💬 자유 메모
+      description: 그 외 자유롭게 메모할 사항을 적어주세요.
+      value: |
+        -
