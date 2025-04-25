@@ -1,0 +1,49 @@
+name: "📝 General TODO"
+description: 개인 작업 목표를 정리하고 팀에 공유합니다.
+title: "[General] 홍길동 250425 TODO"
+labels: ["General Introduction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # ✅ TODO 템플릿
+        팀 프로젝트를 위한 개인 할 일과 메모, 공유 아이디어를 정리하세요.
+
+  - type: textarea
+    id: personal-todo
+    attributes:
+      label: ✅ TODO
+      description: 이번 주 또는 오늘의 주요 작업 항목을 정리해주세요.
+      value: |
+        ### 📚 Goorm
+        - [ ] DP 복습 + 문풀
+
+        ### 📚 Kubernetes
+        - [ ] 오픈소스 PR 올리기 + 피드백 요청
+        - [ ] 그림과 실습으로 배우는 도커&쿠버네티스 Ch6
+        - [ ] CKA Architecture 정리본 복습
+        - [ ] Udemy | CKA 20강 (시간나면..)
+
+        ### 📚 알고리즘
+        - [ ] 알고리즘 2문제
+    validations:
+      required: true
+
+  - type: textarea
+    id: memo
+    attributes:
+      label: 📋 Memo
+      description: 오늘 중간중간 생긴 생각이나 기록해두고 싶은 내용을 자유롭게 적어주세요.
+      value: |
+        - 
+        - 
+        - 
+
+  - type: textarea
+    id: sharing
+    attributes:
+      label: 💡 공유
+      description: 팀과 공유하고 싶은 정보, 링크, 코드 스니펫 등을 적어주세요.
+      value: |
+        - 
+        - 
